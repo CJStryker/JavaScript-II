@@ -3,7 +3,13 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+let pushes = 0;
+const buttonPusher = () => {
+    pushes += 1;
+    return pushes;
+}
 
+console.log(buttonPusher());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
